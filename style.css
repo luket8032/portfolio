@@ -1,12 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');  
 
 * {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+}
+
 /* Nav Elements */
-.nav {
+.my-name {
+    font-size: 2em;
+}
+.nav-container {
+    align-items: center;
     display: flex;
+    margin: 10px 400px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.nav-list li {
+    font-size: 1.2em;
+    margin: 0px 12px;
+}
+
+/* Home Elements */
+.home-container {
+    margin: 100px 400px;
+}
+
+.home-text {
+    font-size: 3em;
+}
+
+/* Project Section Elements */
+.projects-container {
+    text-align: center;
+}
+
+/* Skills Section Elements */
+.skills-container {
+    text-align: center;
+}
+
+/* Contact Section Elements */
+.contact-container {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
 }
