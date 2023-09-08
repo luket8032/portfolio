@@ -138,12 +138,50 @@ main {
 }
 
 .project-item {
-    border: solid black 1px;
+    background-color: #edf2f8;
+    border: none;
     border-radius: 15px;
     margin: 0px 15px;
+    padding: 20px 10px;
     text-align: center;
-    height: 275px;
+    height: fit-content;
     width: 225px;
+}
+
+.project-img {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.item-text {
+    color: #7b113a;
+}
+
+.item-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.item-buttons button {
+    align-items: center;
+    background-color: #7b113a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    font-size: 1em;
+    height: 25px;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px 30px;
+    transition: .2s;
+    width: 100px;
+}
+
+.item-buttons button:hover {
+    scale: 1.1;
 }
 
 /* Skills Section Elements */
