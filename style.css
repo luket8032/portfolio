@@ -240,14 +240,65 @@ main {
 
 /* Contact Section Elements */
 .contact-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
     padding: 50px;
-    height: 100vh;
 }
 
 .contact-container h1 {
     font-size: 3em;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+label {
+    font-size: 1.2em;
+    margin: 0px 0px 10px 10px;
+}
+
+input {
+    background-color: #edf2f8;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 1.2em;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+textarea {
+    background-color: #edf2f8;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    padding: 15px;
+    resize: none;
+}
+
+.contact-container button {
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    transition: .2s;
+}
+
+.contact-container button:hover {
+    scale: 1.1;
 }
 
 /* Footer */
