@@ -127,6 +127,11 @@ main {
     scale: 1.1;
 }
 
+.home-buttons a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Project Section Elements */
 .projects-container {
     display: flex;

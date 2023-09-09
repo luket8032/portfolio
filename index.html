@@ -6,6 +6,10 @@
     <title>Luke Tran Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
 </head>
 <body>
     <nav class="nav-container">
@@ -29,7 +33,7 @@
                 </p>
             </div>
             <div class="home-buttons">
-                <button>Contact Me</button>
+                <button><a href="#contact">Contact</a></button>
                 <button>Resume</button>
             </div>
         </div>
@@ -42,8 +46,8 @@
                     <h2>Battleship</h2>
                     <p class="item-text">The classic board game "Battleship" made with JS, HTML, CSS, Webpack.</p>
                     <div class="item-buttons">
-                        <button>Live</button>
-                        <button>Source</button>
+                        <button onclick="window.location.href='https://luket8032.github.io/battleship/'">Live</button>
+                        <button onclick="window.location.href='https://github.com/luket8032/battleship'">Source</button>
                     </div>
                 </div>
                 <div class="project-item">
@@ -51,8 +55,8 @@
                     <h2>To-Do List</h2>
                     <p class="item-text">To-Do list app made with JS, HTML, CSS, and Webpack.</p>
                     <div class="item-buttons">
-                        <button>Live</button>
-                        <button>Source</button>
+                        <button onclick="window.location.href='https://luket8032.github.io/To-Do-List/'">Live</button>
+                        <button onclick="window.location.href='https://github.com/luket8032/To-Do-List'">Source</button>
                     </div>
                 </div>
                 <div class="project-item">
@@ -60,8 +64,8 @@
                     <h2>Library App</h2>
                     <p class="item-text">Library App, to log books you're reading/read made with JS, HTML, CSS</p>
                     <div class="item-buttons">
-                        <button>Live</button>
-                        <button>Source</button>
+                        <button onclick="window.location.href='https://luket8032.github.io/MyLibrary/'">Live</button>
+                        <button onclick="window.location.href='https://github.com/luket8032/MyLibrary'">Source</button>
                     </div>
                 </div>
                 <div class="project-item">
@@ -69,8 +73,8 @@
                     <h2>Weather App</h2>
                     <p class="item-text">Weather App that uses a free weather API to display weather information.</p>
                     <div class="item-buttons">
-                        <button>Live</button>
-                        <button>Source</button>
+                        <button onclick="window.location.href='https://luket8032.github.io/WeatherApp/'">Live</button>
+                        <button onclick="window.location.href='https://github.com/luket8032/WeatherApp'">Source</button>
                     </div>
                 </div>
                 <div class="project-item">
@@ -78,17 +82,17 @@
                     <h2>Tic-Tac-Toe</h2>
                     <p class="item-text">Tic-Tac-Toe game made with JS, HTML, and CSS. One player vs. Computer</p>
                     <div class="item-buttons">
-                        <button>Live</button>
-                        <button>Source</button>
+                        <button onclick="window.location.href='https://luket8032.github.io/Tic-Tac-Toe/'">Live</button>
+                        <button onclick="window.location.href='https://github.com/luket8032/Tic-Tac-Toe'">Source</button>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="images/portfolio.png" alt="portfolio img" class="project-img">
-                    <h2>Tic-Tac-Toe</h2>
-                    <p class="item-text">This is the portfolio website you'ree on right now! Made with HTML, CSS.</p>
+                    <h2>Personal Portfolio</h2>
+                    <p class="item-text">This is the portfolio website you're on right now! Made with HTML, CSS.</p>
                     <div class="item-buttons">
-                        <button>Live</button>
-                        <button>Source</button>
+                        <button onclick="window.location.href=''">Live</button>
+                        <button onclick="window.location.href='https://github.com/luket8032/portfolio'">Source</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +138,7 @@
 
         <div class="contact-container" id="contact">
             <h1><p class="heading-secondary">Contact</p> me!</h1>
-            <form>
+            <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" class="form-name" placeholder="Your name" name="name" id="name">
                 <label for="email">Email Address:</label>
