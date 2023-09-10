@@ -340,3 +340,43 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+/* Resume Page */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    text-align: center;
+}
+
+.resume-container h1 {
+    margin: 25px;
+}
+
+.resume-container button {
+    align-items: center;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    display: flex;
+    font-size: 1.3em;
+    margin: 25px auto;
+    padding: 15px 30px;
+    transition: .2s;
+    width: fit-content;
+}
+
+.resume-container button:hover {
+    scale: 1.1;
+}
+
+.resume-nav {
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+}
