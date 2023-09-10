@@ -353,7 +353,7 @@ footer {
     margin: 25px;
 }
 
-.resume-container button {
+.resume-container a {
     align-items: center;
     background-color: blue;
     border: none;
@@ -364,11 +364,12 @@ footer {
     font-size: 1.3em;
     margin: 25px auto;
     padding: 15px 30px;
+    text-decoration: none;
     transition: .2s;
     width: fit-content;
 }
 
-.resume-container button:hover {
+.resume-container a:hover {
     scale: 1.1;
 }
 
