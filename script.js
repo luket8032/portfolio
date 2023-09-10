@@ -1,4 +1,4 @@
-const sendBtn = document.getElementById('sendBtn');
+// const sendBtn = document.getElementById('sendBtn');
 const loader = document.getElementById('loader');
 
 let isLoader = false;
@@ -28,7 +28,10 @@ function sendEmail(e) {
         document.getElementById('email').value = "";
         document.getElementById('message').value = "";
         alert('You message has been sent!');
+    }, function(){
+        toggleLoader();
+        alert('Something whent wrong, try again later.');
     });
 }
 
-sendBtn.addEventListener('click', sendEmail);
+// sendBtn.addEventListener('click', sendEmail);

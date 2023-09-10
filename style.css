@@ -304,8 +304,10 @@ textarea {
     color: white;
     display: flex;
     font-size: 1.3em;
+    margin: 0px auto;
     padding: 15px 30px;
     transition: .2s;
+    width: fit-content;
 }
 
 .contact-container button:hover {
