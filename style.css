@@ -402,7 +402,8 @@ footer {
 .resume-container {
     display: flex;
     flex-direction: column;
-    height:fit-content;
+    height:100vh;
+    justify-content: center;
     text-align: center;
 }
 
@@ -437,6 +438,18 @@ footer {
     display: flex;
     padding: 10px 0px;
     width: 100%;
+}
+
+.resume-container embed {
+    height: 500px;
+    width: 500px;
+}
+
+@media (max-width:500px) {
+    .resume-container embed {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 /* Mobile Layout */
