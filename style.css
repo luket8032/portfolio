@@ -135,26 +135,28 @@ main {
     font-size: .6em;
 }
 
-.home-buttons button {
+.home-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.home-buttons a {
+    align-items: center;
     background-color: #7b113a;
     border: none;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: white;
-    font-size: 1.2em;
-    margin-right: 20px;
-    padding: 15px 0px;
-    transition: .2s;
-    width: 150px;
-}
-
-.home-buttons button:hover {
-    scale: 1.1;
-}
-
-.home-buttons a {
-    color: inherit;
+    display: flex;
+    font-size: 1.3em;
+    padding: 15px 30px;
     text-decoration: none;
+    transition: .2s;
+    width: fit-content;
+}
+
+.home-buttons a:hover {
+    scale: 1.1;
 }
 
 /* Project Section Elements */
