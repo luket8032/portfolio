@@ -31,7 +31,7 @@
     </nav>
     <main>
         <div class="home-container" id="home">
-            <div class="home-text">
+            <div class="hidden home-text">
                 <p class="hi">Hi! My name is, </p>
                 <p class="home-name">Luke Tran</p>
                 <p class="home-name">I'm a Full-Stack Developer</p>
@@ -40,16 +40,16 @@
                     Systems. I am looking for an oppurtunity to put my skills to use.
                 </p>
             </div>
-            <div class="home-buttons">
+            <div class="hidden home-buttons">
                 <button><a href="#contact">Contact</a></button>
                 <button>Resume</button>
             </div>
         </div>
 
         <div class="projects-container" id="projects">
-            <h1>Some of my <p class="heading-secondary">Projects</p></h1>
+            <h1 class="hidden">Some of my <p class="heading-secondary">Projects</p></h1>
             <div class="items-container">
-                <div class="project-item">
+                <div class="hidden project-item">
                     <img src="assets/images/battleship.png" alt="battleship img" class="project-img">
                     <h2>Battleship</h2>
                     <p class="item-text">The classic board game "Battleship" made with JS, HTML, CSS, Webpack.</p>
@@ -58,7 +58,7 @@
                         <button onclick="window.location.href='https://github.com/luket8032/battleship'">Source</button>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="hidden project-item">
                     <img src="assets/images/todolist.png" alt="to-do list img" class="project-img">
                     <h2>To-Do List</h2>
                     <p class="item-text">To-Do list app made with JS, HTML, CSS, and Webpack.</p>
@@ -67,7 +67,7 @@
                         <button onclick="window.location.href='https://github.com/luket8032/To-Do-List'">Source</button>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="hidden project-item">
                     <img src="assets/images/mylibrary.png" alt="library app img" class="project-img">
                     <h2>Library App</h2>
                     <p class="item-text">Library App, to log books you're reading/read made with JS, HTML, CSS</p>
@@ -76,7 +76,7 @@
                         <button onclick="window.location.href='https://github.com/luket8032/MyLibrary'">Source</button>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="hidden project-item">
                     <img src="assets/images/weatherapp.png" alt="weather app img" class="project-img">
                     <h2>Weather App</h2>
                     <p class="item-text">Weather App that uses a free weather API to display weather information.</p>
@@ -85,7 +85,7 @@
                         <button onclick="window.location.href='https://github.com/luket8032/WeatherApp'">Source</button>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="hidden project-item">
                     <img src="assets/images/tictactoe.png" alt="tic tac toe img" class="project-img">
                     <h2>Tic-Tac-Toe</h2>
                     <p class="item-text">Tic-Tac-Toe game made with JS, HTML, and CSS. One player vs. Computer</p>
@@ -94,7 +94,7 @@
                         <button onclick="window.location.href='https://github.com/luket8032/Tic-Tac-Toe'">Source</button>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="hidden project-item">
                     <img src="assets/images/portfolio.png" alt="portfolio img" class="project-img">
                     <h2>Personal Portfolio</h2>
                     <p class="item-text">This is the portfolio website you're on right now! Made with HTML, CSS.</p>
@@ -107,37 +107,37 @@
         </div>
 
         <div class="skills-container" id="skills">
-            <h1>My <p class="heading-secondary">Skill Set</p></h1>
+            <h1 class="hidden">My <p class="heading-secondary">Skill Set</p></h1>
             <div class="skill-icons">
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                     <p>JavaScript</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
                     <p>HTML</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
                     <p>CSS</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                     <p>React</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
                     <p>Git</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                     <p>NodeJS</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
                     <p>Python</p>
                 </div>
-                <div class="icon-container">
+                <div class="hidden icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
                     <p>MongoDB</p>
                 </div>
@@ -145,15 +145,15 @@
         </div>
 
         <div class="contact-container" id="contact">
-            <h1><p class="heading-secondary">Contact</p> me!</h1>
+            <h1 class="hidden"><p class="heading-secondary">Contact</p> me!</h1>
             <form id="contactForm" onsubmit="return sendEmail(event)">
-                <label for="name">Name:</label>
-                <input type="text" class="form-name" placeholder="Your name" name="name" id="name" required>
-                <label for="email">Email Address:</label>
-                <input type="email" class="form-email" placeholder="youremail@gmail.com" name="email" id="email" required>
-                <label for="message">Your Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-                <button id="sendBtn" type="submit">Send<span class="loader" id="loader"></span></button>
+                <label for="name" class="hidden">Name:</label>
+                <input type="text" class="hidden form-name" placeholder="Your name" name="name" id="name" required>
+                <label for="email" class="hidden">Email Address:</label>
+                <input type="email" class="hidden form-email" placeholder="youremail@gmail.com" name="email" id="email" required>
+                <label for="message" class="hidden">Your Message:</label>
+                <textarea class="hidden" name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                <button class="hidden" id="sendBtn" type="submit">Send<span class="loader" id="loader"></span></button>
             </form>
         </div>
     </main>

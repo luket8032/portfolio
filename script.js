@@ -1,7 +1,17 @@
-// const sendBtn = document.getElementById('sendBtn');
 const loader = document.getElementById('loader');
-
+const hiddenElements = document.querySelectorAll('.hidden');
 let isLoader = false;
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+            console.log(entry.target)
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
 
 function toggleLoader() {
     if(isLoader) {
@@ -34,4 +44,4 @@ function sendEmail(e) {
     });
 }
 
-// sendBtn.addEventListener('click', sendEmail);
+hiddenElements.forEach((el) => observer.observe(el));

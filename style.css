@@ -27,6 +27,26 @@ main {
     color: blue;
 }
 
+/* Animate on scroll  */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hiden {
+        transition: none;
+    }
+}
+
 /* Nav Elements */
 .my-name {
     font-size: 2em;
@@ -52,6 +72,7 @@ main {
     position: fixed;
     top: 0%;
     width: 100%;
+    z-index: 1;
 }
 
 .nav-list {
