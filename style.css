@@ -445,15 +445,8 @@ footer {
     width: 500px;
 }
 
-@media (max-width:500px) {
-    .resume-container embed {
-        height: 300px;
-        width: 300px;
-    }
-}
-
 /* Mobile Layout */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     /* Nav */
     .my-name {
         margin-left: 25px;
@@ -549,6 +542,12 @@ footer {
     textarea {
         font-size: 1em;
         width: 100%;
+    }
+
+    /* Resume */
+    .resume-container embed {
+        height: 300px;
+        width: 300px;
     }
 
     /* Animate on scroll */
