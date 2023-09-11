@@ -1,25 +1,27 @@
 const loader = document.getElementById('loader');
 const hiddenElements = document.querySelectorAll('.hidden');
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+let isMenuOpen = false;
 let isLoader = false;
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
-            console.log(entry.target)
         } else {
             entry.target.classList.remove('show');
         }
     });
 });
 
-function toggleLoader() {
-    if(isLoader) {
-        loader.style.display = 'none';
-        isLoader = false;
+function toggleMenu() {
+    if(isMenuOpen) {
+        mobileMenu.style.display = 'none';
+        isMenuOpen = false;
     } else {
-        loader.style.display = 'inline-block';
-        isLoader = true;
+        mobileMenu.style.display = 'block';
+        isMenuOpen = true;
     }
 }
 
@@ -44,4 +46,5 @@ function sendEmail(e) {
     });
 }
 
+menuBtn.addEventListener('click', toggleMenu);
 hiddenElements.forEach((el) => observer.observe(el));
