@@ -31,7 +31,7 @@ main {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateX(-30%);
     transition: all 1s;
 }
 
@@ -358,6 +358,7 @@ textarea {
 
 /* Footer */
 footer {
+    margin-bottom: 10px;
     text-align: center;
     width: 100%;
 }
