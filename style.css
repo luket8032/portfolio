@@ -559,3 +559,119 @@ footer {
         transform: translateX(0);
     }
 }
+
+/* Tablet Layout */
+@media (max-width: 1000px) {
+    /* Nav */
+    .my-name {
+        margin-left: 25px;
+        font-size: 1.5em;
+    }
+    .nav-list {
+        display: none;
+        margin-right: 0px
+    }
+
+    /* Home */
+    .home-text {
+        font-size: 3em;
+    }
+
+    .home-container {
+        padding: 10px 50px;
+        margin: 0px;
+        height: 900px;
+    }
+
+    .home-buttons {
+        justify-content: start;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 25px;
+    }
+
+    /* Projects */
+    .projects-container {
+        padding: 25px 10px;
+        margin: 0px;
+    }
+    .projects-container h1 {
+        font-size: 2.5em;
+        margin: 0px;
+    }
+    .project-item {
+        width: 200px;
+    }
+
+    .project-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .items-container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px 0px;
+    }
+
+    .item-buttons {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Skills */
+    .skills-container {
+        padding: 25px 25px;
+    }
+    .skills-container h1 {
+        font-size: 2.5em;
+        margin-bottom: 25px;
+    }
+    .skill-icons {
+        width: 100%;
+        gap: 25px;
+        margin-bottom: 10px;
+    }
+
+    /* Contact */
+    .contact-container h1 {
+        font-size: 2em;
+    }
+    form {
+        width: 450px;
+    }
+    label {
+        font-size: 1em;
+    }
+    input {
+        font-size: 1em;
+        height: 25px;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    textarea {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    /* Resume */
+    .resume-container embed {
+        height: 600px;
+        width: 600px;
+    }
+
+    /* Animate on scroll */
+    .hidden {
+        transform: translateX(-100%);
+    }
+    
+    .show {
+        transform: translateX(0);
+    }
+}
