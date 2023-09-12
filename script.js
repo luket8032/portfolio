@@ -25,6 +25,16 @@ function toggleMenu() {
     }
 }
 
+function toggleLoader() {
+    if(isLoader) {
+        loader.style.display = 'none';
+        isLoader = false;
+    } else {
+        loader.style.display = 'block';
+        isLoader = true;
+    }
+}
+
 function sendEmail(e) {
     e.preventDefault();
     toggleLoader();
