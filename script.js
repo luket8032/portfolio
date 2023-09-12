@@ -48,3 +48,10 @@ function sendEmail(e) {
 
 menuBtn.addEventListener('click', toggleMenu);
 hiddenElements.forEach((el) => observer.observe(el));
+
+// //temp code to find elements that cause overflow
+// document.querySelectorAll('*').forEach(elem => {
+//     if (elem.offsetWidth > document.documentElement.offsetWidth) {
+//         console.log('Problem child: ', elem);
+//     }
+//   });
